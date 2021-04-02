@@ -1,7 +1,6 @@
 import React from 'react'
-import { Spinner } from '@/presentation/components';
+import { Spinner } from '@/presentation/components'
 import Styles from './form-status-styles.scss'
-
 
 const FormStatus: React.FC = () => {
   return (
@@ -12,4 +11,4 @@ const FormStatus: React.FC = () => {
   )
 }
 
-export default FormStatus;
+export default FormStatus

@@ -14,4 +14,4 @@ const Spinner: React.FC<Props> = (props: Props) => {
   )
 }
 
-export default Spinner;
+export default Spinner

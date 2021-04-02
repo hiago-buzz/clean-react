@@ -11,4 +11,4 @@ const LoginHeader: React.FC = () => {
   )
 }
 
-export default memo(LoginHeader);
+export default memo(LoginHeader)
