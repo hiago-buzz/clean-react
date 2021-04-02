@@ -4,7 +4,7 @@
   },
   "extends": [
     "standard-with-typescript",
-    "react/recommended"
+    "plugin:react/recommended"
   ],
   "plugins": [
     "react"
