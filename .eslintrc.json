@@ -1,11 +1,8 @@
 {
-  "settings": {
-    "react": "detect"
-  },
-  "extends": [
-    "standard-with-typescript",
-    "react/recommended"
-  ],
+  // "settings": {
+  //   "react": "detect"
+  // },
+  "extends": "standard-with-typescript",
   "plugins": [
     "react"
   ],
@@ -15,7 +12,7 @@
   "rules": {
     "@typescript-eslint/consistent-type-definitions": "off",
     "@typescript-eslint/strict-boolean-expressions": "off",
-    "react/jsx-uses-react": "error",
-    "react/jsx-uses-vars": "error"
+    "@typescript-eslint/camelcase": "off",
+    "@typescript-eslint/no-unused-vars": "off"
   }
 }
