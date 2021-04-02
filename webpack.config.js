@@ -7,7 +7,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'public/js'),
     publicPath: '/public/js',
-    fileName: 'bundle.js'
+    filename: 'bundle.js'
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js', 'scss'],
@@ -26,10 +26,10 @@ module.exports = {
         test: /\.scss$/,
         use: [
           {
-            loader: 'style-lodader'
+            loader: 'style-loader'
           },
           {
-            loader: 'css-lodader',
+            loader: 'css-loader',
             options: {
               modules: true
             }
