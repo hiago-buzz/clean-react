@@ -13,7 +13,7 @@ class ValidationSpy implements Validation {
   errorMessage: string
   input: object
 
-  validate (input: object): string {
+  validate(input: object): string {
     this.input = input
     return this.errorMessage
   }
@@ -49,6 +49,15 @@ describe('Login Component', () => {
     fireEvent.input(emailInput, { target: { value: mockedEmail } })
     expect(validationSpy.input).toEqual({
       email: mockedEmail
+    })
+  })
+  test('Should call Validation with correct password value', () => {
+    const { sut, validationSpy } = makesut()
+    const mockedPassword = faker.datatype.uuid()
+    const passwordInput = sut.getByTestId('password')
+    fireEvent.input(passwordInput, { target: { value: mockedPassword } })
+    expect(validationSpy.input).toEqual({
+      password: mockedPassword
     })
   })
 })
